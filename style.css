@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: fantasy;
+    font-weight: 300;
+}
+
+#app {
+    width: 100%;
+    height: 80px;
+    background-color: lightpink;
+}
+
+#games {
+    width: 100%;
+    height: 80px;
+    background-color: lightsalmon;
+}
+
+#chat {
+    width: 100%;
+    height: 80px;
+    background-color: peachpuff;
+}
+
+image:hover {
+    transform: scale(1.2);
+}
+
+img {
+    transform: 0.2s;
+}
+
+.line {
+    height: 6px;
+    background-color: white;
+    width: 70px;
+    margin: 8px auto;
+}

@@ -1,34 +1,78 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="app">
-        <h1> Create </h1>
-        <div class="line"></div>
-        <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/wrCt60HTlviB4q2dC_1kKjGi88We3c2tzsvd_-texCw/embed"></iframe>
-        <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/YVv7dN7gIDT04lxY8l2CX-8AGcAGcFjEqrmhKN0EA_w/embed"></iframe>
-    </section>
-    <section id="games">
-        <h1> Play </h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/applab/fMVgI7F-qLQRkIelwL9IBus9xAqInXYITrgDZwvK-1A" target="_blank">
-            <img src="game1.png"> </a>
-        <a href="https://studio.code.org/projects/spritelab/B-bN93zw1PmBa4EBd7s8wAE_eSXehNV7Xlkby6iGOCQ" target="_blank">
-            <img src="game2.png"> </a>
-    </section>
-    <section id="chat">
-        <h1> Chat </h1>
-        <div class="line"> </div>
-        <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/80d7c67c-319e-43d5-9f50-e187dfde4686">
-        </iframe>
-    </section>
-</body>
 
-</html>
+    <div class="container">
+
+        <section id="app">
+            <h1>Create</h1>
+            <div class="line"></div>
+            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/wrCt60HTlviB4q2dC_1kKjGi88We3c2tzsvd_-texCw/embed"></iframe>
+            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/YVv7dN7gIDT04lxY8l2CX-8AGcAGcFjEqrmhKN0EA_w/embed"></iframe>
+        </section>
+
+        <h2> Click on the games to play! </h2>
+
+        <div id="mycarousel" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <center>
+                        <a href="https://studio.code.org/projects/applab/fMVgI7F-qLQRkIelwL9IBus9xAqInXYITrgDZwvK-1A" target="_blank">
+                            <img src="game1.png" class="img-responsive"> </a>
+                        <div class="carousel-content">
+                            <p>Get the balls!</p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <a href="https://studio.code.org/projects/spritelab/B-bN93zw1PmBa4EBd7s8wAE_eSXehNV7Xlkby6iGOCQ" target="_blank">
+                            <img src="game2.png" class="img-responsive"> </a>
+                        <div class="carousel-content">
+                            <p>Control the drone!</p>
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <a class="left carousel-control" href="mycarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"> </span> </a>
+            <a class="right carousel-control" href="mycarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"> </span> </a>
+        </div>
+        <h2>Click On The Play Store Apps To Explore</h2>
+        <h5>This games are built in play lab, click on the app to view</h5>
+        <div id="myCarouse2" class="carousel slide">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center> <a href="#" target="_blank"> <img src="chat_app.png" class="img-responsive"> </a>
+                        <div class="carousel-content">
+                            <p>Chat app</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <a href="#" target="_blank"> <img src="be_fit_img.png" class="img-responsive"> </a>
+                        <div class="carousel-content">
+                            <p>Be Fit Not Fat</p>
+                        </div>
+                    </center>
+                </div>
+            </div> <!-- Left and right controls --> <a class="left carousel-control" href="#myCarouse2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarouse2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        </div>
+
+
+    </div>
+</body></html>
